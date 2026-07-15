@@ -6,11 +6,11 @@ npx -v
 ## Instalar Angular
 npm install -g @angular/cli
 
-## Para atualizar as dependências
-npm install
-
 ## Entrar na pasta do projeto
 cd 
+
+## Para atualizar as dependências
+npm install
 
 ## Inicializar o servidor angular (modo dev)
 npx ng serve
