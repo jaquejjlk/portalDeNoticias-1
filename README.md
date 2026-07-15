@@ -21,6 +21,9 @@ npx ng build
 ## criar o projeto do site
 npx ng new
 
+## Criar um novo componente 
+npx ng g c 
+
 ## Criar um novo componente de cabeçalho
 npx ng g c header
 
