@@ -1,7 +1,5 @@
-## Confira Node.js
-node -v
-npm -v
-npx -v
+## Verificar se Angular está instalado
+ng version
 
 ## Instalar Angular
 npm install -g @angular/cli
@@ -11,6 +9,9 @@ cd
 
 ## Para atualizar as dependências
 npm install
+
+## Instalar o Json Server
+npm install json-server
 
 ## Inicializar o servidor angular (modo dev)
 npx ng serve
