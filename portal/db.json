@@ -1,5 +1,5 @@
 {
-  "categorias": [
+  "local": [
     {"id": "1", "nome": "Tecnologia"}, 
     {"id": "2", "nome": "Saúde"},
     {"id": "3", "nome": "Educação"}, 
