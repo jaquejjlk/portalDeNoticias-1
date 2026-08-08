@@ -1,17 +1,17 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { Regional } from './regional';
+import { Sobre } from './sobre';
 
-describe('Regional', () => {
-  let component: Regional;
-  let fixture: ComponentFixture<Regional>;
+describe('Sobre', () => {
+  let component: Sobre;
+  let fixture: ComponentFixture<Sobre>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [Regional],
+      imports: [Sobre],
     }).compileComponents();
 
-    fixture = TestBed.createComponent(Regional);
+    fixture = TestBed.createComponent(Sobre);
     component = fixture.componentInstance;
     await fixture.whenStable();
   });

@@ -1,17 +1,17 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { Local } from './local';
+import { Visita } from './visita';
 
-describe('Local', () => {
-  let component: Local;
-  let fixture: ComponentFixture<Local>;
+describe('Visita', () => {
+  let component: Visita;
+  let fixture: ComponentFixture<Visita>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [Local],
+      imports: [Visita],
     }).compileComponents();
 
-    fixture = TestBed.createComponent(Local);
+    fixture = TestBed.createComponent(Visita);
     component = fixture.componentInstance;
     await fixture.whenStable();
   });
