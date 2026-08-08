@@ -1,14 +1,12 @@
 import { Routes } from '@angular/router';
-import { Local } from './local/local';
-import { Regional } from './regional/regional';
-import { Internacional } from './internacional/internacional';
-import { Somos } from './somos/somos';
 import { Home } from './home/home';
+import { Visita } from './visita/visita';
+import { Acontecendo } from './acontecendo/acontecendo';
+import { Sobre } from './sobre/sobre';
 
 export const routes: Routes = [
     { path: 'home', component: Home },
-    { path: 'local', component: Local },
-    { path: 'regional', component: Regional },
-    { path: 'internacional', component: Internacional },
-    { path: 'quem-somos', component: Somos }
+    { path: 'visita', component: Visita },
+    { path: 'acontecendo', component: Acontecendo },
+    { path: 'sobre', component: Sobre }
 ];
