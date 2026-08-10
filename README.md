@@ -5,7 +5,7 @@ ng version
 npm install -g @angular/cli
 
 ## Entrar na pasta do projeto
-cd 
+cd
 
 ## Para atualizar as dependências
 npm install
