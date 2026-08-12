@@ -25,89 +25,28 @@
     <p class="max-w-[700px] text-[10px] font-semibold leading-3">
       Utilizamos os cookies para melhorar a sua experiência. Para cumprir com a nova diretiva de privacidade, nós precisamos pedir seu consentimento para definir os cookies.<span class="underline cursor-pointer"> Saiba mais.</span>
     </p>
-
-
-    <!-- BOTÕES -->
-
+    
     <div class="flex items-center gap-3">
-
-      <!-- RECUSAR -->
-
-      <button
-        onclick="recusarCookies()"
-        class="border border-white px-6 py-2 text-[12px] transition duration-200 hover:bg-white hover:text-black"
-      >
+      <button onclick="recusarCookies()" class="border border-white px-6 py-2 text-[12px] transition duration-200 hover:bg-white hover:text-black">
         Recusar
       </button>
-
-
-      <!-- ACEITAR -->
-
-      <button
-        onclick="aceitarCookies()"
-        class="border border-white bg-white px-7 py-2 text-[12px] text-black transition duration-200 hover:bg-gray-200"
-      >
+      <button onclick="aceitarCookies()" class="border border-white bg-white px-7 py-2 text-[12px] text-black transition duration-200 hover:bg-gray-200">
         Aceitar
       </button>
-
     </div>
 
   </section>
 
-
-  <!-- =========================
-       CONTEÚDO
-  ========================== -->
-
-  <section
-    class="mx-auto min-h-[475px] max-w-[830px] px-6 py-9"
-  >
-
-    <!-- SABER MAIS -->
-
-    <a
-      routerLink="/sobre"
-      class="block w-fit text-2xl font-normal text-black transition duration-200 hover:text-gray-500"
-    >
+  <section class="mx-auto min-h-[475px] max-w-[830px] px-6 py-9">
+    <a routerLink="acontecendo" class="block w-fit text-2xl font-normal text-black transition duration-200 hover:text-gray-500">
       SABER MAIS ↗
     </a>
-
-
-    <!-- IMAGEM -->
-
     <div class="mt-3">
-
-      <img
-        src="images/arte.jpg"
-        alt="Obra de arte"
-        class="h-auto w-[490px] object-cover"
-      >
-
+      <img src="images/visita.jpg" alt="Visita"class="h-auto w-[490px] object-cover">
     </div>
-
   </section>
 
-
-  <!-- =========================
-       FOOTER
-  ========================== -->
-
-  <footer
-    class="flex h-[80px] items-center justify-center bg-slate-800 text-white"
-  >
-
-    <p class="text-sm">
-      © 2026 Popverse. Todos os direitos reservados.
-    </p>
-
-  </footer>
-
 </main>
-
-
-<!-- =========================
-     JAVASCRIPT DOS COOKIES
-========================== -->
 
 <script>
 
