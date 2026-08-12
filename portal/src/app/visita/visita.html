@@ -1,32 +1,42 @@
 <main class="w-full bg-white">
 
-  <section class="relative h-[215px] overflow-hidden bg-gradient-to-r from-blue-700 via-indigo-600 to-purple-500">
+  <!-- =========================
+       BANNER DE INGRESSOS
+  ========================== -->
+
+  <section
+    class="relative h-[268px] w-full overflow-hidden bg-gradient-to-r from-blue-700 via-indigo-600 to-purple-500"
+  >
 
     <!-- TEXTO DO PREÇO -->
-    <div class="absolute left-[23%] top-6 text-white">
 
-      <p class="text-2xl font-bold">
+    <div class="absolute left-[28%] top-8 text-white">
+
+      <p class="text-3xl font-bold leading-tight">
         Ingressos a partir de:
       </p>
 
-      <p class="text-6xl font-bold leading-none">
+      <p class="text-[72px] font-bold leading-none">
         R$25,00
       </p>
+
     </div>
 
 
-    <!-- BOTÃO -->
+    <!-- BOTÃO COMPRE JÁ -->
+
     <a
       routerLink="/ingressos"
-      class="absolute left-[63%] top-[110px] rounded-full border-2 border-white px-8 py-1 text-4xl font-bold text-white transition duration-300 hover:bg-white hover:text-purple-600"
+      class="absolute left-[59%] top-[140px] rounded-full border-2 border-white px-10 py-1 text-4xl font-bold text-white transition duration-300 hover:bg-white hover:text-purple-600"
     >
       compre já
     </a>
 
 
     <!-- FAIXA NOVIDADE -->
+
     <div
-      class="absolute -right-16 top-8 w-[360px] rotate-[20deg] bg-red-500 py-2 text-center text-4xl font-bold text-white"
+      class="absolute -right-[70px] top-4 w-[400px] rotate-[20deg] bg-red-500 py-2 text-center text-4xl font-bold text-white"
     >
       NOVIDADE
     </div>
@@ -34,38 +44,77 @@
   </section>
 
 
-  <!-- COOKIES -->
-  <section class="flex h-[48px] items-center justify-between bg-black px-8 text-white">
+  <!-- =========================
+       AVISO DE COOKIES
+  ========================== -->
 
-    <p class="text-[10px]">
+  <section
+    id="cookie-banner"
+    class="flex min-h-[48px] w-full items-center justify-between bg-black px-8 py-2 text-white"
+  >
+
+    <!-- TEXTO -->
+
+    <p class="max-w-[700px] text-[10px] font-semibold leading-3">
+
       Utilizamos os cookies para melhorar a sua experiência.
       Para cumprir com a nova diretiva de privacidade,
       nós precisamos do seu consentimento para definir os cookies.
-      Saiba mais.
+      <span class="underline cursor-pointer">
+        Saiba mais.
+      </span>
+
     </p>
 
-    <button
-      class="border border-white px-5 py-2 text-[11px] transition hover:bg-white hover:text-black"
-    >
-      Recusar
-    </button>
+
+    <!-- BOTÕES -->
+
+    <div class="flex items-center gap-3">
+
+      <!-- RECUSAR -->
+
+      <button
+        onclick="recusarCookies()"
+        class="border border-white px-6 py-2 text-[12px] transition duration-200 hover:bg-white hover:text-black"
+      >
+        Recusar
+      </button>
+
+
+      <!-- ACEITAR -->
+
+      <button
+        onclick="aceitarCookies()"
+        class="border border-white bg-white px-7 py-2 text-[12px] text-black transition duration-200 hover:bg-gray-200"
+      >
+        Aceitar
+      </button>
+
+    </div>
 
   </section>
 
 
-  <!-- CONTEÚDO -->
-  <section class="mx-auto min-h-[400px] max-w-5xl px-14 py-9">
+  <!-- =========================
+       CONTEÚDO
+  ========================== -->
+
+  <section
+    class="mx-auto min-h-[475px] max-w-[830px] px-6 py-9"
+  >
 
     <!-- SABER MAIS -->
+
     <a
       routerLink="/sobre"
-      class="block text-2xl text-black transition hover:text-gray-500"
+      class="block w-fit text-2xl font-normal text-black transition duration-200 hover:text-gray-500"
     >
       SABER MAIS ↗
     </a>
 
 
     <!-- IMAGEM -->
+
     <div class="mt-3">
 
       <img
@@ -78,4 +127,66 @@
 
   </section>
 
+
+  <!-- =========================
+       FOOTER
+  ========================== -->
+
+  <footer
+    class="flex h-[80px] items-center justify-center bg-slate-800 text-white"
+  >
+
+    <p class="text-sm">
+      © 2026 Popverse. Todos os direitos reservados.
+    </p>
+
+  </footer>
+
 </main>
+
+
+<!-- =========================
+     JAVASCRIPT DOS COOKIES
+========================== -->
+
+<script>
+
+  function aceitarCookies() {
+
+    localStorage.setItem("cookies", "aceito");
+
+    document
+      .getElementById("cookie-banner")
+      .classList.add("hidden");
+
+  }
+
+
+  function recusarCookies() {
+
+    localStorage.setItem("cookies", "recusado");
+
+    document
+      .getElementById("cookie-banner")
+      .classList.add("hidden");
+
+  }
+
+
+  // Verifica se o usuário já escolheu
+  window.addEventListener("load", function () {
+
+    const cookies =
+      localStorage.getItem("cookies");
+
+    if (cookies) {
+
+      document
+        .getElementById("cookie-banner")
+        .classList.add("hidden");
+
+    }
+
+  });
+
+</script>
