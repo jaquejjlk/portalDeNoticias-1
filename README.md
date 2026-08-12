@@ -1,6 +1,6 @@
 ## Verificar se Angular está instalado
 ng version
-
+npm install @fortawesome/fontawesome-free
 ## Instalar Angular
 npm install -g @angular/cli
 

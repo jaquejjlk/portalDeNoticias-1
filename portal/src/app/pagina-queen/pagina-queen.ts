@@ -1,10 +1,8 @@
 import { Component } from '@angular/core';
-import { RouterLink } from '@angular/router';
-
 
 @Component({
   selector: 'app-pagina-queen',
-  imports: [RouterLink],
+  imports: [],
   templateUrl: './pagina-queen.html',
   styleUrl: './pagina-queen.css',
 })
