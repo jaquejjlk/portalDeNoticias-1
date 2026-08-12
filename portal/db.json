@@ -1,17 +1,14 @@
 {
-  "home": [
-    {"id": "1", "nome": "Tecnologia"}, 
-    {"id": "2", "nome": "Saúde"},
-    {"id": "3", "nome": "Educação"}, 
-    {"id": "4", "nome": "Lazer"},
-    {"id": "5", "nome": "Negócios"}, 
-    {"id": "6", "nome": "Arte"},
-    {"id": "7", "nome": "Esportes"}, 
-    {"id": "8", "nome": "Gastronomia"},
-    {"id": "9", "nome": "Moda"}, 
-    {"id": "10", "nome": "Música"}
- ],
-  "eventos": [
-    { "id": "1", "titulo": "Biblioteca SENAI", "data": "2026-08-18", "local": "BR-470, km 470 - n 2555 - Navegantes, Rio do Sul - SC, 89162-528", "categoriaId": "1", "descricao": "Biblioteca SENAI." },
+  "visita": [
+    { "id": "1", "titulo": "Visita", "descricao": "Conheça o popverse e descubra tudo o que está acontecendo." },
+  ],
+    "login": [
+    { "id": "1", "titulo": "Login", "descricao": "Digite suas informações de login para acessar sua conta." ,"email": "E-mail", "Senha": "Senha", "cadastro": "Cadastre-se", "recuperarSenha": "Esqueceu a sua senha?", "botao": "Entrar" },
+  ],
+    "cadastro": [
+    { "id": "1", "titulo": "Cadastro", "descricao": "Seja bem-vindo(a), Cadastre-se para acessar o popverse." ,"email": "E-mail", "Senha": "Senha", "confirmarSenha": "Confirmar Senha", "recuperarSenha": "Esqueceu a sua senha?", "nome": "Nome" ,"sobrenome": "Sobrenome" ,"sexo": "Sexo", "dataNascimento": "Data de Nascimento", "telefone": "Número do Telefone", "botao": "Criar Conta"},
+  ],
+    "eventos": [
+    { "id": "1", "titulo": "Biblioteca SENAI", "data": "2026-08-18", "horario": "20:40","descricao": "Evento realizado na Biblioteca SENAI." ,"preco": "R$ 25,00", "precoAnterior": "R$ 39,90"},
   ]
 }
