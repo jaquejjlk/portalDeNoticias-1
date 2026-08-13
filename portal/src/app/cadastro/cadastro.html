@@ -1,43 +1,28 @@
 <div class="min-h-screen bg-black/40">
-
-
     <div class="flex min-h-screen items-center justify-center px-4 py-6">
 
         <div class="relative w-full max-w-[520px] bg-white px-10 py-5 shadow-2xl">
-
-            <a
-                routerLink="/acontecendo"
-                aria-label="Fechar cadastro"
-                class="absolute right-4 top-2 text-3xl font-light text-black transition hover:text-gray-500">
+            <a routerLink="/visita" aria-label="Fechar cadastro" class="absolute right-4 top-2 text-3xl font-light text-black transition hover:text-gray-500">
                 ×
             </a>
 
             <h1 class="text-center text-3xl font-bold text-black">
                 Cadastro
             </h1>
-
             <p class="mb-2 text-center text-xs text-black">
                 Seja bem-vindo(a). Cadastre-se para acessar o museu.
             </p>
 
-            <input
-                type="email"
-                placeholder="E-mail *"
-                class="mb-5 h-11 w-full border border-gray-400 px-3 text-sm outline-none focus:border-purple-500"
-            >
-
+            <!--email-->
+            <input type="email" placeholder="E-mail *" class="mb-5 h-11 w-full border border-gray-400 px-3 text-sm outline-none focus:border-purple-500">
+            
+            <!--senha-->
             <div class="relative">
-                <input
-                    type="password"
-                    placeholder="Senha *"
-                    class="h-11 w-full border border-gray-400 px-3 pr-10 text-sm outline-none focus:border-purple-500"
-                >
-
+                <input type="password" placeholder="Senha *" class="h-11 w-full border border-gray-400 px-3 pr-10 text-sm outline-none focus:border-purple-500">
                 <span class="absolute right-5 top-3 text-sm">
                     🔒
                 </span>
             </div>
-
             <div class="mb-2 grid grid-cols-2 text-[10px] leading-4 text-gray-600">
                 <span>ⓘMínimo de 8 caracteres</span>
                 <span>ⓘCaractere especial (Ex.: !@#$%*)</span>
@@ -46,25 +31,20 @@
                 <span>ⓘLetra minúscula (a-z)</span>
             </div>
 
+            <!--esqueceu senha-->
             <div class="relative mb-2">
-                <input
-                    type="password"
-                    placeholder="Confirmar Senha *"
-                    class="h-11 w-full border border-gray-400 px-3 pr-10 text-sm outline-none focus:border-purple-500"
-                >
-
+                <input type="password" placeholder="Confirmar Senha *" class="h-11 w-full border border-gray-400 px-3 pr-10 text-sm outline-none focus:border-purple-500">
                 <span class="absolute right-5 top-3 text-sm">
                     🔒
                 </span>
             </div>
 
-            <div class="mb-2 grid grid-cols-2 gap-4">
 
+            <div class="mb-2 grid grid-cols-2 gap-4">
                 <input
                     type="text"
                     placeholder="Nome *"
-                    class="h-11 border border-gray-400 px-3 text-sm outline-none focus:border-purple-500"
-                >
+            class="h-11 border border-gray-400 px-3 text-sm outline-none focus:border-purple-500">
 
                 <input
                     type="text"
